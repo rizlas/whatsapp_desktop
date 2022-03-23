@@ -2,9 +2,9 @@
 # WhatsApp Desktopish
 
 This repo will bring to linux and docker users Whatsapp Desktop app.
-This is an unofficial app and is not verified by WhatsApp LLC nor affiliated or supported. It's just Electron under the hood (that's why I said desktopish).
+This is an unofficial app and is not verified by WhatsApp LLC nor affiliated or supported. It's just Electron under the hood (that's why I say desktopish).
 
-How you say?
+You say how?
 
 - Using Nativefier that is a command-line tool to easily create a “desktop app” for any web site with minimal fuss. <https://github.com/nativefier/nativefier>
 - Docker and docker-compose to keep your system clean and avoiding commands like
@@ -20,13 +20,13 @@ chmod +x deploy_wa.sh
 sudo bash ./deploy_wa.sh
 ```
 
-If you want a shortcut in your application menù
+If you want a shortcut in your application menu
 
 ```bash
 cp whatsapp.desktop /usr/share/applications
 ```
 
-Keep in mind, times to times remember to change user agent in docker-compose.yml
+Keep in mind to change times to times the user agent in docker-compose.yml
 
 Enjoy WhatsApp
 
@@ -34,7 +34,7 @@ Enjoy WhatsApp
 
 - <https://github.com/nativefier/nativefier> Nativefier
 
-Fell free to make pull requests, fork, destroy or whatever you like most. Any criticism is more than welcome.
+Feel free to make pull requests, fork, destroy or whatever you like most. Any criticism is more than welcome.
 
 <br/>
 
