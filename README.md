@@ -26,7 +26,7 @@ If you want a shortcut in your application menu
 cp whatsapp.desktop /usr/share/applications
 ```
 
-Keep in mind to change times to times the user agent in docker-compose.yml
+Keep in mind to change times to times the user agent in docker-compose.yml and to rebuild the app when a warning appears (just run deploy_wa.sh).
 
 Enjoy WhatsApp
 
