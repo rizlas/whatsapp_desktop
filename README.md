@@ -7,7 +7,7 @@ This is an unofficial app and is not verified by WhatsApp LLC nor affiliated or 
 How you say?
 
 - Using Nativefier that is a command-line tool to easily create a “desktop app” for any web site with minimal fuss. <https://github.com/nativefier/nativefier>
-- Docker and docker-compose to keep your system clean and avoiding command like
+- Docker and docker-compose to keep your system clean and avoiding commands like
 
     ```bash
     npm install world
