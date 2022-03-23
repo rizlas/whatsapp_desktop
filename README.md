@@ -9,20 +9,22 @@ How you say?
 - Using Nativefier that is a command-line tool to easily create a “desktop app” for any web site with minimal fuss. <https://github.com/nativefier/nativefier>
 - Docker and docker-compose to keep your system clean and avoiding command like
 
-    <pre><code>npm install world</code></pre>
+    ```bash
+    npm install world
+    ```
 
 ## Usage
 
-<pre><code>
+```bash
 chmod +x deploy_wa.sh
 sudo bash ./deploy_wa.sh
-</pre></code>
+```
 
 If you want a shortcut in your application menù
 
-<pre><code>
+```bash
 cp whatsapp.desktop /usr/share/applications
-</pre></code>
+```
 
 Keep in mind, times to times remember to change user agent in docker-compose.yml
 
