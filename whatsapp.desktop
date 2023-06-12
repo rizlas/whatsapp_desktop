@@ -1,17 +1,10 @@
 [Desktop Entry]
-Comment[en_US]=WhatsApp for Linux.
-Comment=
+Categories=Network;Messaging;
+Comment=WhatsApp for Linux
 Exec=/opt/whatsApp/whatsApp
-GenericName[en_US]=WhatsApp for Linux.
 GenericName=WhatsApp
 Icon=/opt/whatsApp/resources/app/icon.png
-MimeType=
-Name[en_US]=WhatsApp
 Name=WhatsApp
-NoDisplay=false
-Path=
-Categories=Network
 StartupNotify=true
 Terminal=false
-TerminalOptions=
 Type=Application
