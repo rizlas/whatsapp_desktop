@@ -1,6 +1,9 @@
 
 # WhatsApp Desktopish
 
+⚠️ **Warning:** This project is archived. For an updated and better alternative, check out [Pake](https://github.com/tw93/Pake) or my [Fork](https://github.com/rizlas/Pake) 
+with whatsapp already generated.
+
 This repo will bring to linux and docker users Whatsapp Desktop app.
 This is an unofficial app and is not verified by WhatsApp LLC nor affiliated or supported. It's just Electron under the hood (that's why I say desktopish).
 
