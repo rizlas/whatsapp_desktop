@@ -1,0 +1,11 @@
+electron/node_modules/
+electron/package-lock.json
+.npm-cache/
+.electron-cache/
+.cache/
+apps/linux-unpacked/
+apps/*.AppImage
+apps/*.deb
+apps/*.snap
+apps/builder-debug.yml
+apps/builder-effective-config.yaml

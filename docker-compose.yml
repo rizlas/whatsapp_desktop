@@ -1,29 +1,15 @@
 ---
 services:
-  nativefier:
-    image: nativefier/nativefier:latest
-    entrypoint:
-      [
-        "nativefier",
-        "--icon",
-        "/src/icon.png",
-        "--name",
-        "whatsApp",
-        "--inject",
-        "/src/whatsapp_fix.js",
-        "-p",
-        "linux",
-        "-a",
-        "x64",
-        "--lang",
-        "it",
-        "--user-agent",
-        "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:144.0) Gecko/20100101 Firefox/144.0",
-        "--single-instance",
-        "https://web.whatsapp.com/",
-        "/target/",
-        "--verbose"
-      ]
+  electron-builder:
+    image: electronuserland/builder:latest
+    working_dir: /project/electron
+    command: sh -c "npm install && npm run build"
     volumes:
-      - ./custom:/src
-      - ./apps:/target
+      - .:/project
+    # Run as current user so output files are owned by you, not root.
+    # Override with: UID=$(id -u) GID=$(id -g) docker compose up
+    user: "${UID:-1000}:${GID:-1000}"
+    environment:
+      npm_config_cache: /project/.npm-cache
+      ELECTRON_CACHE: /project/.electron-cache
+      XDG_CACHE_HOME: /project/.cache
