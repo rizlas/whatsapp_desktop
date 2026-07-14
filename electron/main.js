@@ -69,8 +69,16 @@ function createWindow() {
   });
 
   // ── Permissions ─────────────────────────────────────────────────────────────
+  // 'media' covers microphone and camera (voice messages, voice/video calls).
+  const ALLOWED_PERMISSIONS = ['notifications', 'media', 'clipboard-sanitized-write'];
+
   win.webContents.session.setPermissionRequestHandler((_wc, permission, callback) => {
-    callback(permission === 'notifications');
+    callback(ALLOWED_PERMISSIONS.includes(permission));
+  });
+
+  win.webContents.session.setPermissionCheckHandler((_wc, permission, origin) => {
+    if (!ALLOWED_PERMISSIONS.includes(permission)) return false;
+    return origin.startsWith('https://web.whatsapp.com');
   });
 
   // ── User-agent ───────────────────────────────────────────────────────────────
